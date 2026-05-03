@@ -75,15 +75,16 @@ if analysis and analysis.get("topics"):
     # ----- Syllabus Coverage -----
     syllabus = analysis.get("syllabus")
     if syllabus:
-        st.header("📚 Syllabus Coverage")
+        st.header("📚 Top Missing Topics To Study")
 
-        st.subheader("✅ Covered Topics")
-        for t in syllabus["covered"]:
-            st.markdown(f"- {t}")
+        missing_topics = syllabus.get("missing", [])
+        top_missing_topics = missing_topics[:5]
 
-        st.subheader("❌ Missing Topics (Focus Here!)")
-        for t in syllabus["missing"]:
-            st.markdown(f"- {t}")
+        if top_missing_topics:
+            for t in top_missing_topics:
+                st.markdown(f"- {t}")
+        else:
+            st.success("Great job! No missing topics found.")
 
     # ----- Topic Insights -----
     st.header("📈 Topic Insights")
@@ -243,7 +244,7 @@ if st.button("Run Evaluation"):
         st.write(f"Difficulty Accuracy: {scores['difficulty_accuracy']}")
         st.write(f"Total Samples: {scores['total_samples']}")
 
-        st.subheader("Predictions")
-        st.json(data["predictions"])
+        #st.subheader("Predictions")
+        #st.json(data["predictions"])
     else:
         st.error(f"Evaluation request failed with status code {response.status_code}")

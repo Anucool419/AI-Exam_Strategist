@@ -1,0 +1,65 @@
+The Complete Machine Learning
+Curriculum
+A Comprehensive Guide from Fundamentals to Generative AI
+2026 Edition
+Chapter 1: Foundations & Supervised Learning
+Topics in this chapter focus on mapping inputs to known outputs using labeled datasets.
+Linear Models:
+Linear Regression, Logistic Regression, Polynomial Regression, GLMs.
+Tree-Based Models:
+Decision Trees, Random Forests, Gradient Boosting (XGBoost, LightGBM, CatBoost).
+Distance & Support Vectors:
+K-Nearest Neighbors (KNN), Support Vector Machines (SVM), Kernel Trick.
+Evaluation Metrics:
+MSE, MAE, R-Squared, Accuracy, Precision-Recall, F1-Score, ROC-AUC.
+Chapter 2: Unsupervised Learning & Preprocessing
+This chapter explores finding hidden patterns in data without explicit labels.
+Clustering:
+K-Means, K-Medoids, Hierarchical Clustering (Agglomerative), DBSCAN, Gaussian Mixture
+Models (GMM).
+Dimensionality Reduction:
+Principal Component Analysis (PCA), t-SNE, UMAP, Linear Discriminant Analysis (LDA).
+Association & Anomaly:
+Apriori Algorithm, Eclat, Isolation Forests, Local Outlier Factor (LOF).
+Chapter 3: Deep Learning (Neural Networks)
+Topics include the architecture and optimization of biologically inspired models.
+Architecture Fundamentals:
+Perceptrons, Multi-Layer Perceptrons (MLP), Activation Functions (ReLU, Sigmoid, Tanh,
+Softmax).
+Optimization:
+Backpropagation, Gradient Descent (SGD, Adam, RMSProp), Weight Initialization (Xavier, He).
+Regularization:
+Dropout, Batch Normalization, L1/L2 Regularization, Early Stopping.
+Chapter 4: Natural Language Processing (NLP)
+This chapter covers techniques to process, analyze, and generate human language.
+Text Preprocessing:
+Tokenization, Stopword Removal, Stemming, Lemmatization, Part-of-Speech (POS) Tagging.
+Vectorization:
+Bag of Words, TF-IDF, Word Embeddings (Word2Vec, GloVe, FastText).
+Sequence Modeling:
+RNNs, LSTMs, GRUs, Bidirectional RNNs.
+Modern Architectures:
+Attention Mechanisms, Transformers (Encoder-only, Decoder-only), BERT, RoBERTa.
+Chapter 5: Computer Vision (CV)
+Topics focused on enabling machines to see and interpret visual data.
+Core CNNs:
+Convolutional Layers, Pooling (Max/Average), Stride, Padding, Fully Connected Layers.
+Famous Architectures:
+AlexNet, VGG, ResNet (Residual Connections), Inception, MobileNet, EfficientNet.
+Tasks:
+Object Detection (YOLO, R-CNN), Image Segmentation (U-Net, Mask R-CNN), Face Recognition.
+Chapter 6: Generative AI & LLMs
+The cutting edge of AI focusing on the creation of new content.
+Generative Models:
+Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), Diffusion Models.
+Large Language Models (LLMs):
+GPT-3/4, T5, Llama, PaLM. Fine-tuning (LoRA, QLoRA), Prompt Engineering.
+Advanced Frameworks:
+Retrieval Augmented Generation (RAG), LangChain, LangGraph (Agentic Workflows), Vector
+Databases (Pinecone, Milvus).
+Chapter 7: Reinforcement Learning
+Learning through trial and error to maximize rewards.
+Concepts:
+Markov Decision Processes (MDP), Bellman Equation, Rewards, Policies.
+Algorithms:
+Q-Learning, SARSA, Deep Q-Networks (DQN), Policy Gradients, PPO, Actor-Critic.

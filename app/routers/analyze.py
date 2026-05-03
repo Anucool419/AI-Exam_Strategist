@@ -114,10 +114,15 @@
     
 ## 
 ## Using LangGraph
+import os
 from app.core.graph import build_graph
+from app.core.syllabus_mapper import map_syllabus
+from app.core.syllabus_parser import parse_syllabus
 from fastapi import APIRouter
+
 router = APIRouter()
 graph = build_graph()
+SYLLABUS_TEXT = "data/syllabus.txt"
 
 @router.post("/analyze")
 async def analyze(file_paths: list[str]):
@@ -125,11 +130,20 @@ async def analyze(file_paths: list[str]):
         "file_paths": file_paths
     })
 
+    syllabus_result = None
+
+    if os.path.exists(SYLLABUS_TEXT):
+        with open(SYLLABUS_TEXT, "r", encoding="utf-8") as f:
+            syllabus_text = f.read()
+
+        syllabus_topics = parse_syllabus(syllabus_text)
+        syllabus_result = map_syllabus(result["topics"], syllabus_topics)
+
     return {
         "topics": result["topics"],
         "plan": result["plan"],
         "classified": result["classified"],  # 🔥 ADD THIS
-        #"syllabus": result["syllabus_result"]
-         "years": [c["year"] for c in result["classified"]]
+        "syllabus": syllabus_result,
+        "years": [c["year"] for c in result["classified"]]
         
     }
