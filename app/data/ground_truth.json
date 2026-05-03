@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What does NLP stand for?",
+    "topic": "nlp",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is tokenization?",
+    "topic": "nlp",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Explain TF-IDF with an example.",
+    "topic": "nlp",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Explain the working of RNN.",
+    "topic": "deep learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is Named Entity Recognition?",
+    "topic": "nlp",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is backpropagation?",
+    "topic": "machine learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Explain bias-variance tradeoff.",
+    "topic": "machine learning",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is cross-validation?",
+    "topic": "machine learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the exploration vs exploitation tradeoff?",
+    "topic": "reinforcement learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Explain Markov Decision Process.",
+    "topic": "reinforcement learning",
+    "difficulty": "hard"
+  }
+]
