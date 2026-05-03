@@ -178,7 +178,7 @@ streamlit run app/frontend/streamlit_app.py
 * Enhanced UI/UX and filtering
 
 ---
-
+## Video link: https://www.loom.com/share/04005565701e45d1855d1fa13bcee73a
 ## 👨‍💻 Author
 
 Built as a hackathon project exploring **GenAI + education use cases**
