@@ -60,9 +60,8 @@ Students often go through multiple past question papers but struggle to:
 
 * Topic frequency charts
 * Difficulty distribution
-* Topic vs difficulty analysis
+* Topic vs difficulty analysis 
 * Year-wise topic trends
-* Syllabus coverage heatmap
 
 ---
 
