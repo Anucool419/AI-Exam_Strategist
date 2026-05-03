@@ -157,10 +157,10 @@ streamlit run app/frontend/streamlit_app.py
 4. Generate study plan
 5. Practice questions
 6. Ask AI assistant
-7. View evaluation metrics
+7. View evaluation metrics (for evalauation metrics, create your own ground_truth.json to compare with your data)
 
 ---
-
+## Streamlit deployment: https://ai-examstrategist-ryjarq6usrfbsd85gipexy.streamlit.app/
 ## ⚠️ Limitations
 
 * OCR for scanned PDFs not implemented (text-based PDFs supported)
