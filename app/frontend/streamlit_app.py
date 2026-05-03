@@ -112,27 +112,7 @@ if analysis and analysis.get("topics"):
         pivot = pd.crosstab(df["topic"], df["difficulty"])
         st.bar_chart(pivot)
 
-    # ----- Heatmap -----
-    if syllabus:
-        st.header("🔥 Syllabus Coverage Heatmap")
-
-        covered = syllabus["covered"]
-        missing = syllabus["missing"]
-
-        heatmap_data = []
-
-        for t in covered:
-            heatmap_data.append({"topic": t, "status": 1})
-
-        for t in missing:
-            heatmap_data.append({"topic": t, "status": 0})
-
-        df_heat = pd.DataFrame(heatmap_data)
-
-        def color_map(val):
-            return "background-color: green" if val == 1 else "background-color: red"
-
-        st.dataframe(df_heat.style.applymap(color_map))
+   
 
     # ----- Top Topics -----
     st.header("🏆 Top Important Topics")
