@@ -161,6 +161,13 @@ streamlit run app/frontend/streamlit_app.py
 
 ---
 ## Streamlit deployment: https://ai-examstrategist-ryjarq6usrfbsd85gipexy.streamlit.app/
+🌐 Live App: (Frontend UI - requires local backend to function fully)
+
+⚠️ Note: Backend (FastAPI) is not deployed yet.
+To run fully:
+1. Run FastAPI locally
+2. Then open Streamlit app
+
 ## ⚠️ Limitations
 
 * OCR for scanned PDFs not implemented (text-based PDFs supported)
